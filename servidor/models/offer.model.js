@@ -13,7 +13,7 @@ const OfferSchema = new mongoose.Schema({
     type: Array,
     required: [true, "Lenguages is obligatory"],
     validate: {
-      // Se valida que se ingrese almenos un valor en Lenguages 
+      // Se valida que se ingrese almenos un valor en Lenguages
       validator: function (nuevo) {
         return nuevo && nuevo.length > 0;
       },
